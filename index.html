@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div>
+    <h2> <span class="badge badge-secondary">STOPWATCH</span></h2>
+    <!-- <h2 style="color: aliceblue;">Stopwatch</h2> -->
+     <br> <br>
+    <h1 id="min" style="visibility: hidden;">0</h1><h6 id="lblMin" style="visibility: hidden;">M</h6>
+    <h1 id="sec">0</h1> <h6 id="lblSec">S</h6>
+    <h1 id="msec">0</h1>
+</div>
+<br>
+<br>
+<div>
+    <button id="btnStart" type="button" class="btn btn-light" onclick="start()">Start</button>
+    <button type="button" class="btn btn-light" onclick="reset()">Reset</button>
+</div>
+    
+<div id="recordDiv" name="record">
+    <button id="btnSave" type="button" class="btn btn-light" onclick="save()">Save</button>
+    <button type="button" class="btn btn-light" onclick="show()">Show</button>
+</div>
+
+<div id="resultCard" class="card" style="width: 18rem; visibility: hidden;" >
+    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+    <div class="card-body">
+      <h5 class="card-title">Results</h5>
+      <p class="card-text" id="resultPara"></p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+
+
+<script src="app.js">   </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

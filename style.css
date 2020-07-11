@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    text-align: center ; 
+}
+h1{
+    color: rgb(255, 253, 253);
+    display: inline-block;
+    width: 50px;
+    
+    /* background-color: #fff; */
+}
+h6{
+    color: rgb(255, 253, 253);
+    display: inline-block;
+    /* text-align: center ;  */
+}
+div{
+    padding: 0.5rem;
+}
